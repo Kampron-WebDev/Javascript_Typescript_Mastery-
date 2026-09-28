@@ -1,0 +1,4 @@
+// ✅ Correct. Don't change this file.
+export function formatPrice(cents) {
+  return `$${(cents / 100).toFixed(2)}`;
+}

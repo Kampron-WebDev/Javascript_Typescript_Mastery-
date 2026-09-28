@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [100],
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.exclude": { "**/node_modules": true },
+  "markdown.preview.breaks": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

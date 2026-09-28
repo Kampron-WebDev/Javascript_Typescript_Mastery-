@@ -1,0 +1,14 @@
+{
+  "name": "javascript-typescript-mastery",
+  "private": true,
+  "description": "A deep JavaScript-then-TypeScript language course.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-exercises.ps1",
+    "sync-vscode": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sync-vscode.ps1",
+    "generate": "node tools/skeleton/generate.mjs"
+  }
+}

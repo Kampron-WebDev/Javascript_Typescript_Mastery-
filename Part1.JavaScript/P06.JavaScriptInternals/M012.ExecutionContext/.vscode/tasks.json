@@ -1,0 +1,37 @@
+{
+  // Ctrl+Shift+B  -> run the file you have open with Node.
+  // Ctrl+Shift+P  -> "Tasks: Run Test Task" -> test the exercise you have open.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run this file (Node)",
+      "type": "shell",
+      "command": "node",
+      "args": ["${file}"],
+      "options": { "cwd": "${fileDirname}" },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "clear": true, "focus": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test this exercise",
+      "type": "shell",
+      "command": "node",
+      "args": ["--test", "--test-timeout=20000"],
+      "options": { "cwd": "${fileDirname}" },
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "clear": true, "focus": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test the model solution (only after trying!)",
+      "type": "shell",
+      "command": "node",
+      "args": ["--test", "--test-timeout=20000"],
+      "options": { "cwd": "${fileDirname}", "env": { "CHECK_SOLUTION": "1" } },
+      "group": "test",
+      "presentation": { "clear": true, "focus": true },
+      "problemMatcher": []
+    }
+  ]
+}
