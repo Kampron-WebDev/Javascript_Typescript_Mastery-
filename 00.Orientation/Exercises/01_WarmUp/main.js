@@ -4,7 +4,7 @@ export function courseName() {
   return "JavaScript & TypeScript Mastery";
 }
 
-courseName();
+// courseName();
 
 /** Returns the two languages in the order you learn them, as an array. */
 export function languagesInOrder() {
