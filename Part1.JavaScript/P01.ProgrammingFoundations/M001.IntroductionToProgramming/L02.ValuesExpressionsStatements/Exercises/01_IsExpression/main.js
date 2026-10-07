@@ -3,7 +3,16 @@
  * Uses the engine's parser (new Function) as the referee. See README.md.
  */
 export function isExpression(code) {
-  // TODO 1: empty / whitespace-only → false
-  // TODO 2: try to parse `return (<code>);` with new Function
-  // TODO 3: parsed → true; SyntaxError → false
+  if (code.trim() === "") {
+    return false;
+  }
+  try {
+    new Function(`return (${code});`);
+    return true;
+  } catch (e) {
+    if (e instanceof SyntaxError) {
+      return false;
+    }
+    throw e;
+  }
 }
